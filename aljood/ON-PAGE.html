@@ -23,6 +23,48 @@
         .nav-tabs a:hover { background: rgba(255,255,255,0.2); }
         .back-link { display: inline-block; background: var(--primary); color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; margin-bottom: 20px; }
         .footer { background: var(--primary); color: white; text-align: center; padding: 20px; margin-top: 40px; }
+    
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .header { padding: 20px 15px !important; }
+            .header h1 { font-size: 1.3em !important; }
+            .header p { font-size: 0.9em !important; }
+            .nationwide-banner { padding: 15px 10px !important; font-size: 0.95em !important; margin: -20px -15px 20px !important; }
+            .container { padding: 15px 10px !important; }
+            .task-grid { grid-template-columns: 1fr !important; gap: 15px !important; }
+            .task-card { padding: 15px !important; }
+            .task-header { flex-direction: column !important; align-items: flex-start !important; gap: 10px !important; }
+            .task-number { width: 35px !important; height: 35px !important; font-size: 0.9em !important; }
+            .task-status { font-size: 0.75em !important; }
+            .task-title { font-size: 1em !important; }
+            .task-desc { font-size: 0.85em !important; }
+            .stats { grid-template-columns: repeat(3, 1fr) !important; gap: 10px !important; }
+            .stat-card { padding: 15px !important; }
+            .stat-card h3 { font-size: 1.5em !important; }
+            .stat-card p { font-size: 0.8em !important; }
+            .progress-section { padding: 15px !important; }
+            .nav-tabs { padding: 8px !important; gap: 5px !important; }
+            .nav-tabs a { padding: 6px 10px !important; font-size: 0.8em !important; }
+            .back-link { padding: 8px 15px !important; font-size: 0.9em !important; }
+            table { font-size: 0.85em !important; overflow-x: auto !important; display: block !important; }
+            th, td { padding: 8px 5px !important; }
+            .card { padding: 15px !important; }
+            h2 { font-size: 1.1em !important; }
+            .regions-list { gap: 5px !important; }
+            .region-tag { font-size: 0.8em !important; padding: 4px 10px !important; }
+            .swot-grid { grid-template-columns: 1fr !important; }
+            .scores-grid { grid-template-columns: 1fr 1fr !important; }
+            .scores-grid .score-card h3 { font-size: 2.5em !important; }
+            .footer { padding: 15px !important; font-size: 0.85em !important; }
+        }
+        @media (max-width: 480px) {
+            .header h1 { font-size: 1.1em !important; }
+            .stats { grid-template-columns: 1fr 1fr !important; }
+            .stat-card h3 { font-size: 1.3em !important; }
+            .task-grid { gap: 10px !important; }
+            .nav-tabs a { font-size: 0.7em !important; padding: 5px 8px !important; }
+        }
+
     </style>
 </head>
 <body>
