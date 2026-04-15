@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📊 Google Search Console - جمعية الجود للخدمات الإنسانية</title>
+    <style>
+        :root { --primary: #7b1fa2; --accent: #f0a500; --success: #4CAF50; --warning: #FF9800; --danger: #f44336; --light: #f5f5f5; --white: #ffffff; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background: var(--light); color: #333; line-height: 1.8; }
+        .header { background: linear-gradient(135deg, var(--primary), #9c27b0); color: white; padding: 40px 20px; text-align: center; }
+        .header h1 { font-size: 1.8em; margin-bottom: 10px; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+        .card { background: var(--white); border-radius: 12px; padding: 25px; margin-bottom: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+        h2 { color: var(--primary); margin-bottom: 20px; border-bottom: 3px solid var(--accent); padding-bottom: 10px; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 12px; text-align: right; border-bottom: 1px solid #eee; }
+        th { background: var(--primary); color: white; }
+        .badge { padding: 5px 15px; border-radius: 15px; font-size: 0.85em; color: white; }
+        .badge-success { background: var(--success); }
+        .badge-warning { background: var(--warning); }
+        .badge-danger { background: var(--danger); }
+        ul { padding-right: 25px; margin: 10px 0; }
+        li { margin-bottom: 8px; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin-bottom: 20px; }
+        .stat-box { background: var(--white); padding: 20px; border-radius: 10px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+        .stat-box h3 { color: var(--primary); font-size: 1.8em; margin-bottom: 5px; }
+        .stat-box p { color: #666; font-size: 0.9em; }
+        .status-connected { background: #e8f5e9; border: 2px solid var(--success); padding: 15px; border-radius: 10px; margin-bottom: 20px; text-align: center; }
+        .status-disconnected { background: #ffebee; border: 2px solid var(--danger); padding: 15px; border-radius: 10px; margin-bottom: 20px; text-align: center; }
+        .nav-tabs { background: var(--primary); padding: 10px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-bottom: 20px; }
+        .nav-tabs a { color: white; text-decoration: none; padding: 8px 15px; border-radius: 5px; font-size: 0.9em; }
+        .nav-tabs a:hover, .nav-tabs a.active { background: rgba(255,255,255,0.2); }
+        .back-link { display: inline-block; background: var(--primary); color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; margin-bottom: 20px; }
+        .footer { background: var(--primary); color: white; text-align: center; padding: 20px; margin-top: 40px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📊 Google Search Console</h1>
+        <p>جمعية الجود للخدمات الإنسانية - aljoodb.org.sa</p>
+    </div>
+    <div class="container">
+        <div class="nav-tabs">
+            <a href="SEO-DASHBOARD.html">🏠 الرئيسية</a>
+            <a href="TECHNICAL-AUDIT.html">🔍 التقني</a>
+            <a href="KEYWORDS.html">🔑 الكلمات</a>
+            <a href="COMPETITORS.html">👥 المنافسين</a>
+            <a href="ON-PAGE.html">📝 On-Page</a>
+            <a href="CONTENT.html">📖 المحتوى</a>
+            <a href="GSC.html" class="active">📊 GSC</a>
+            <a href="TAG-MANAGER.html">🏷️ Tag</a>
+            <a href="GOOGLE-INSIGHTS.html">📈 Insights</a>
+            <a href="BACKLINKS.html">🔗 Backlinks</a>
+            <a href="TASKS.html">✅ المهام</a>
+        </div>
+        
+        <a href="SEO-DASHBOARD.html" class="back-link">← العودة للوحة التحكم</a>
+        
+        <div class="status-connected" style="background: #ffebee; border-color: #f44336;">
+            <h3 style="margin: 0 0 5px;">حالة الربط</h3>
+            <span class="badge badge-danger">غير متصل</span>
+        </div>
+        
+        <div class="stats-grid">
+            <div class="stat-box"><h3>12</h3><p>مرات الظهور</p></div>
+            <div class="stat-box"><h3>1</h3><p>النقرات</p></div>
+            <div class="stat-box"><h3>8.3%</h3><p>نسبة النقر</p></div>
+            <div class="stat-box"><h3>78.1</h3><p>متوسط الترتيب</p></div>
+            <div class="stat-box"><h3>6</h3><p>مشاكل الفهرسة</p></div>
+        </div>
+        
+        <div class="card">
+            <h2>🔝 أهم الاستعلامات</h2>
+            <table>
+                <tr><th>الاستعلام</th><th>مرات الظهور</th><th>النقرات</th><th>الترتيب</th></tr>
+                <tr>
+            <td><code>جمعية الجود</code></td>
+            <td>8</td>
+            <td>1</td>
+            <td><span class="badge badge-danger">55.0</span></td>
+        </tr>
+            </table>
+        </div>
+        
+        <div class="card">
+            <h2>⚠️ المشاكل المكتشفة</h2>
+            <ul><li>Sitemap مفقود</li><li>لا Schema markup</li><li>موقع SPA</li></ul>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2026 - Socialbalaant</p>
+    </div>
+</body>
+</html>

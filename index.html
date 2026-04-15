@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socialbalaant - Charity SEO Dashboard</title>
+    <style>
+        :root {
+            --primary: #3c486c;
+            --accent: #f0a500;
+            --light: #f5f5f5;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: var(--light);
+            color: #333;
+        }
+        .header {
+            background: linear-gradient(135deg, var(--primary), #5a6a8c);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .header h1 { font-size: 2.2em; margin-bottom: 10px; }
+        .header p { opacity: 0.9; }
+        .site-info {
+            background: var(--accent);
+            color: var(--primary);
+            padding: 12px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+        .charities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .charity-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+            text-decoration: none;
+            color: #333;
+            display: block;
+        }
+        .charity-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        .charity-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            margin: 0 auto 15px;
+        }
+        .charity-card h2 {
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        .charity-card p {
+            color: #666;
+            font-size: 0.95em;
+            margin-bottom: 15px;
+        }
+        .score-badge {
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .footer {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🏠 Socialbalaant Dashboard</h1>
+        <p>لوحة SEO الموحدة للجمعيات الخيرية</p>
+    </div>
+    <div class="site-info">
+        🌐 إدارة وتحسين محركات البحث - Socialbalaant
+    </div>
+    <div class="container">
+        <div class="charities-grid">
+            
+            <a href="mshaer/SEO-DASHBOARD.html" class="charity-card">
+                <div class="charity-icon" style="background: #1b5e2020; color: #1b5e20;">🏛️</div>
+                <h2>المشاعر</h2>
+                <p>للعناية بالمساجد</p>
+                <span class="score-badge" style="background: #1b5e2020; color: #1b5e20;">45/100</span>
+            </a>
+            <a href="aytam/SEO-DASHBOARD.html" class="charity-card">
+                <div class="charity-icon" style="background: #1565C020; color: #1565C0;">🏛️</div>
+                <h2>كفلاء الأيتام</h2>
+                <p>كفالة الأيتام</p>
+                <span class="score-badge" style="background: #1565C020; color: #1565C0;">38/100</span>
+            </a>
+            <a href="aljood/SEO-DASHBOARD.html" class="charity-card">
+                <div class="charity-icon" style="background: #7b1fa220; color: #7b1fa2;">🏛️</div>
+                <h2>الجود</h2>
+                <p>للخدمات الإنسانية</p>
+                <span class="score-badge" style="background: #7b1fa220; color: #7b1fa2;">35/100</span>
+            </a>
+            <a href="hofath/SEO-DASHBOARD.html" class="charity-card">
+                <div class="charity-icon" style="background: #2e7d3220; color: #2e7d32;">🏛️</div>
+                <h2>حفاظ الوحي</h2>
+                <p>لتحفيظ القرآن</p>
+                <span class="score-badge" style="background: #2e7d3220; color: #2e7d32;">32/100</span>
+            </a>
+            <a href="dawahb/SEO-DASHBOARD.html" class="charity-card">
+                <div class="charity-icon" style="background: #1a2e4a20; color: #1a2e4a;">🏛️</div>
+                <h2>الدعوة والإرشاد</h2>
+                <p>وتوعية الجاليات</p>
+                <span class="score-badge" style="background: #1a2e4a20; color: #1a2e4a;">55/100</span>
+            </a>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2026 - Socialbalaant - جميع الحقوق محفوظة</p>
+    </div>
+</body>
+</html>

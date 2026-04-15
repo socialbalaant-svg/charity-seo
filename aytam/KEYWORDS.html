@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔑 تحليل الكلمات المفتاحية - جمعية كفلاء الأيتام</title>
+    <style>
+        :root { --primary: #1565C0; --accent: #f0a500; --success: #4CAF50; --warning: #FF9800; --danger: #f44336; --light: #f5f5f5; --white: #ffffff; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background: var(--light); color: #333; line-height: 1.8; }
+        .header { background: linear-gradient(135deg, var(--primary), #1976D2); color: white; padding: 40px 20px; text-align: center; }
+        .header h1 { font-size: 1.8em; margin-bottom: 10px; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
+        .card { background: var(--white); border-radius: 12px; padding: 25px; margin-bottom: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+        h2 { color: var(--primary); margin-bottom: 20px; border-bottom: 3px solid var(--accent); padding-bottom: 10px; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 15px; text-align: right; border-bottom: 1px solid #eee; }
+        th { background: var(--primary); color: white; }
+        .badge { padding: 5px 15px; border-radius: 15px; font-size: 0.85em; color: white; }
+        .badge-success { background: var(--success); }
+        .badge-warning { background: var(--warning); }
+        .badge-danger { background: var(--danger); }
+        ul { padding-right: 25px; margin: 10px 0; }
+        li { margin-bottom: 8px; }
+        .golden-card { background: linear-gradient(135deg, #4CAF50, #66bb6a); color: white; padding: 25px; border-radius: 12px; margin-bottom: 20px; }
+        .golden-card h2 { color: white; border: none; margin-bottom: 15px; }
+        .golden-keyword { font-size: 1.5em; font-weight: bold; margin-bottom: 10px; }
+        .nav-tabs { background: var(--primary); padding: 10px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-bottom: 20px; }
+        .nav-tabs a { color: white; text-decoration: none; padding: 8px 15px; border-radius: 5px; font-size: 0.9em; }
+        .nav-tabs a:hover, .nav-tabs a.active { background: rgba(255,255,255,0.2); }
+        .back-link { display: inline-block; background: var(--primary); color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; margin-bottom: 20px; }
+        .stats-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 20px; }
+        .stat-box { background: var(--white); padding: 20px; border-radius: 10px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+        .stat-box h3 { color: var(--primary); font-size: 1.8em; margin-bottom: 5px; }
+        .stat-box p { color: #666; font-size: 0.9em; }
+        .footer { background: var(--primary); color: white; text-align: center; padding: 20px; margin-top: 40px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🔑 تحليل الكلمات المفتاحية</h1>
+        <p>جمعية كفلاء الأيتام - aytam.kufala.sa</p>
+    </div>
+    <div class="container">
+        <div class="nav-tabs">
+            <a href="SEO-DASHBOARD.html">🏠 الرئيسية</a>
+            <a href="TECHNICAL-AUDIT.html">🔍 التقني</a>
+            <a href="KEYWORDS.html" class="active">🔑 الكلمات</a>
+            <a href="COMPETITORS.html">👥 المنافسين</a>
+            <a href="ON-PAGE.html">📝 On-Page</a>
+            <a href="CONTENT.html">📖 المحتوى</a>
+            <a href="GSC.html">📊 GSC</a>
+            <a href="TAG-MANAGER.html">🏷️ Tag</a>
+            <a href="GOOGLE-INSIGHTS.html">📈 Insights</a>
+            <a href="BACKLINKS.html">🔗 Backlinks</a>
+            <a href="TASKS.html">✅ المهام</a>
+        </div>
+        
+        <a href="SEO-DASHBOARD.html" class="back-link">← العودة للوحة التحكم</a>
+        
+        <div class="golden-card">
+            <h2>⭐ الكلمة الذهبية</h2>
+            <div class="golden-keyword">كفالة أيتام بحرة</div>
+            <p>لا يوجد منافس</p>
+        </div>
+        
+        <div class="stats-row">
+            <div class="stat-box"><h3>50-200 بحث/شهر</h3><p>حجم البحث الشهري</p></div>
+            <div class="stat-box"><h3>منخفض جداً</h3><p>صعوبة المنافسة</p></div>
+        </div>
+        
+        <div class="card">
+            <h2>🎯 الكلمات الرئيسية</h2>
+            <table>
+                <tr><th>الكلمة</th><th>الأولوية</th></tr>
+                <tr><td>كفالة أيتام</td><td><span class="badge badge-danger">عالي</span></td></tr><tr><td>كفلاء الأيتام</td><td><span class="badge badge-danger">عالي</span></td></tr><tr><td>كفالة يتيم</td><td><span class="badge badge-danger">عالي</span></td></tr><tr><td>تبرع للأيتام</td><td><span class="badge badge-warning">متوسط</span></td></tr><tr><td>صدقة للأيتام</td><td><span class="badge badge-warning">متوسط</span></td></tr>
+            </table>
+        </div>
+        
+        <div class="card">
+            <h2>📍 الكلمات المحلية</h2>
+            <table>
+                <tr><th>الكلمة</th><th>الحالة</th></tr>
+                <tr><td>كفالة أيتام بحرة</td><td><span class="badge badge-success">فرصة ذهبية - لا منافس!</span></td></tr><tr><td>الأيتام في السعودية</td><td><span class="badge badge-warning">متوسط</span></td></tr><tr><td>بحرة</td><td><span class="badge badge-warning">متوسط</span></td></tr>
+            </table>
+        </div>
+        
+        <div class="card">
+            <h2>🔍 الكلمات الطويلة (Long-tail)</h2>
+            <ul><li>كفالة أيتام شهرياً</li><li>تبرع لكفالة يتيم</li><li>كفالة أيتام مكفولة</li><li>جمعية كفالة أيتام</li><li>رعاية الأيتام</li></ul>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2026 - Socialbalaant</p>
+    </div>
+</body>
+</html>

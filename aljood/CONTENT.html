@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📖 استراتيجية المحتوى - جمعية الجود للخدمات الإنسانية</title>
+    <style>
+        :root { --primary: #7b1fa2; --accent: #f0a500; --success: #4CAF50; --warning: #FF9800; --danger: #f44336; --light: #f5f5f5; --white: #ffffff; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background: var(--light); color: #333; line-height: 1.8; }
+        .header { background: linear-gradient(135deg, var(--primary), #9c27b0); color: white; padding: 40px 20px; text-align: center; }
+        .header h1 { font-size: 1.8em; margin-bottom: 10px; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+        .card { background: var(--white); border-radius: 12px; padding: 25px; margin-bottom: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+        h2 { color: var(--primary); margin-bottom: 20px; border-bottom: 3px solid var(--accent); padding-bottom: 10px; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 12px; text-align: right; border-bottom: 1px solid #eee; }
+        th { background: var(--primary); color: white; }
+        .badge { padding: 5px 15px; border-radius: 15px; font-size: 0.85em; color: white; }
+        .badge-success { background: var(--success); }
+        .badge-warning { background: var(--warning); }
+        .badge-danger { background: var(--danger); }
+        ul { padding-right: 25px; margin: 10px 0; }
+        li { margin-bottom: 8px; }
+        code { background: #f1f1f1; padding: 3px 8px; border-radius: 4px; font-size: 0.9em; }
+        .nav-tabs { background: var(--primary); padding: 10px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-bottom: 20px; }
+        .nav-tabs a { color: white; text-decoration: none; padding: 8px 15px; border-radius: 5px; font-size: 0.9em; }
+        .nav-tabs a:hover, .nav-tabs a.active { background: rgba(255,255,255,0.2); }
+        .back-link { display: inline-block; background: var(--primary); color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; margin-bottom: 20px; }
+        .footer { background: var(--primary); color: white; text-align: center; padding: 20px; margin-top: 40px; }
+        .ideas-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 15px; }
+        .idea-card { background: #f8f9fa; padding: 15px; border-radius: 8px; text-align: center; border: 2px solid var(--accent); }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📖 استراتيجية المحتوى</h1>
+        <p>جمعية الجود للخدمات الإنسانية - aljoodb.org.sa</p>
+    </div>
+    <div class="container">
+        <div class="nav-tabs">
+            <a href="SEO-DASHBOARD.html">🏠 الرئيسية</a>
+            <a href="TECHNICAL-AUDIT.html">🔍 التقني</a>
+            <a href="KEYWORDS.html">🔑 الكلمات</a>
+            <a href="COMPETITORS.html">👥 المنافسين</a>
+            <a href="ON-PAGE.html">📝 On-Page</a>
+            <a href="CONTENT.html" class="active">📖 المحتوى</a>
+            <a href="GSC.html">📊 GSC</a>
+            <a href="TAG-MANAGER.html">🏷️ Tag</a>
+            <a href="GOOGLE-INSIGHTS.html">📈 Insights</a>
+            <a href="BACKLINKS.html">🔗 Backlinks</a>
+            <a href="TASKS.html">✅ المهام</a>
+        </div>
+        
+        <a href="SEO-DASHBOARD.html" class="back-link">← العودة للوحة التحكم</a>
+        
+        <div class="card">
+            <h2>📝 أفكار المحتوى</h2>
+            <ul><li>قصص المستفيدين</li><li>حاسبة الزكاة</li><li>أنواع التبرعات</li></ul>
+        </div>
+        
+        <div class="card">
+            <h2>📊 مواضيع المحتوى المقترحة</h2>
+            <table>
+                <tr><th>الموضوع</th><th>عدد الكلمات</th><th>الكلمة المفتاحية</th><th>التأثير</th></tr>
+                <tr>
+            <td>الخدمات الإنسانية في بحرة</td>
+            <td>1200 كلمة</td>
+            <td><code>خدمات إنسانية بحرة</code></td>
+            <td><span class="badge badge-danger">عالي</span></td>
+        </tr><tr>
+            <td>كيف تساعد المحتاجين</td>
+            <td>800 كلمة</td>
+            <td><code>مساعدة المحتاجين</code></td>
+            <td><span class="badge badge-warning">متوسط</span></td>
+        </tr><tr>
+            <td>زكاة المال كيف تحسب</td>
+            <td>1000 كلمة</td>
+            <td><code>زكاة المال</code></td>
+            <td><span class="badge badge-danger">عالي</span></td>
+        </tr>
+            </table>
+        </div>
+        
+        <div class="card">
+            <h2>📅 تقويم المحتوى</h2>
+            <table>
+                <tr><th>الأسبوع</th><th>المحتوى</th><th>الحالة</th></tr>
+                <tr>
+            <td>الأسبوع 1</td>
+            <td>تدوينة: خدماتنا الإنسانية</td>
+            <td><span class="badge badge-warning">مقترح</span></td>
+        </tr><tr>
+            <td>الأسبوع 2</td>
+            <td>فيديو: قصص مستفيدين</td>
+            <td><span class="badge badge-warning">مقترح</span></td>
+        </tr><tr>
+            <td>الأسبوع 3</td>
+            <td>تدوينة: زكاة المال</td>
+            <td><span class="badge badge-warning">مقترح</span></td>
+        </tr>
+            </table>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2026 - Socialbalaant</p>
+    </div>
+</body>
+</html>

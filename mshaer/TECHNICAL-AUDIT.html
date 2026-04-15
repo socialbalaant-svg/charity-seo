@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔍 الفحص التقني - جمعية المشاعر للعناية بالمساجد</title>
+    <style>
+        :root { --primary: #1b5e20; --accent: #f0a500; --success: #4CAF50; --warning: #FF9800; --danger: #f44336; --light: #f5f5f5; --white: #ffffff; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background: var(--light); color: #333; line-height: 1.8; }
+        .header { background: linear-gradient(135deg, var(--primary), #2e7d32); color: white; padding: 40px 20px; text-align: center; }
+        .header h1 { font-size: 1.8em; margin-bottom: 10px; }
+        .score-section { background: var(--white); padding: 30px; margin: 20px auto; max-width: 400px; border-radius: 15px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .score-number { font-size: 4em; font-weight: bold; color: var(--primary); }
+        .score-label { color: #666; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
+        .card { background: var(--white); border-radius: 12px; padding: 25px; margin-bottom: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+        h2 { color: var(--primary); margin-bottom: 20px; border-bottom: 3px solid var(--accent); padding-bottom: 10px; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 15px; text-align: right; border-bottom: 1px solid #eee; }
+        th { background: var(--primary); color: white; }
+        .badge { padding: 5px 15px; border-radius: 15px; font-size: 0.85em; color: white; }
+        .badge-success { background: var(--success); }
+        .badge-warning { background: var(--warning); }
+        .badge-danger { background: var(--danger); }
+        ul { padding-right: 25px; margin: 10px 0; }
+        li { margin-bottom: 10px; }
+        .nav-tabs { background: var(--primary); padding: 10px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-bottom: 20px; }
+        .nav-tabs a { color: white; text-decoration: none; padding: 8px 15px; border-radius: 5px; font-size: 0.9em; }
+        .nav-tabs a:hover, .nav-tabs a.active { background: rgba(255,255,255,0.2); }
+        .back-link { display: inline-block; background: var(--primary); color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; margin-bottom: 20px; }
+        .footer { background: var(--primary); color: white; text-align: center; padding: 20px; margin-top: 40px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🔍 الفحص التقني الشامل</h1>
+        <p>جمعية المشاعر للعناية بالمساجد - store.mshaer.sa</p>
+    </div>
+    <div class="container">
+        <div class="nav-tabs">
+            <a href="SEO-DASHBOARD.html">🏠 الرئيسية</a>
+            <a href="TECHNICAL-AUDIT.html" class="active">🔍 التقني</a>
+            <a href="KEYWORDS.html">🔑 الكلمات</a>
+            <a href="COMPETITORS.html">👥 المنافسين</a>
+            <a href="ON-PAGE.html">📝 On-Page</a>
+            <a href="CONTENT.html">📖 المحتوى</a>
+            <a href="GSC.html">📊 GSC</a>
+            <a href="TAG-MANAGER.html">🏷️ Tag</a>
+            <a href="GOOGLE-INSIGHTS.html">📈 Insights</a>
+            <a href="BACKLINKS.html">🔗 Backlinks</a>
+            <a href="TASKS.html">✅ المهام</a>
+        </div>
+        
+        <a href="SEO-DASHBOARD.html" class="back-link">← العودة للوحة التحكم</a>
+        
+        <div class="score-section">
+            <div class="score-number">55</div>
+            <div class="score-label">النتيجة التقنية</div>
+        </div>
+        
+        <div class="card">
+            <h2>📊 نتائج الفحص التفصيلي</h2>
+            <table>
+                <tr><th>العنصر</th><th>الحالة</th></tr>
+                <tr><td>SSL Certificate</td><td><span class="badge badge-success">موجود</span></td></tr><tr><td>Sitemap.xml</td><td><span class="badge badge-success">موجود - 9 صفحات</span></td></tr><tr><td>Robots.txt</td><td><span class="badge badge-success">موجود</span></td></tr><tr><td>Meta Description</td><td><span class="badge badge-danger">فارغ</span></td></tr><tr><td>Meta Keywords</td><td><span class="badge badge-danger">فارغ</span></td></tr><tr><td>Open Graph Title</td><td><span class="badge badge-success">موجود</span></td></tr><tr><td>Open Graph Description</td><td><span class="badge badge-danger">فارغ</span></td></tr><tr><td>Open Graph Image</td><td><span class="badge badge-success">موجود</span></td></tr><tr><td>Schema Markup</td><td><span class="badge badge-success">موجود (Schema.org)</span></td></tr><tr><td>Title Tag</td><td><span class="badge badge-success">جمعية المشاعر للعناية بالمساجد</span></td></tr><tr><td>Header Tags (H1-H6)</td><td><span class="badge badge-warning">H2, H4 موجود - H1 مفقود</span></td></tr><tr><td>Images Alt Text</td><td><span class="badge badge-success">13 صورة مع alt</span></td></tr><tr><td>Mobile Friendly</td><td><span class="badge badge-success">متوافق</span></td></tr><tr><td>Page Speed</td><td><span class="badge badge-warning">يحتاج فحص</span></td></tr><tr><td>Google Analytics</td><td><span class="badge badge-danger">غير موجود</span></td></tr>
+            </table>
+        </div>
+        
+        <div class="card">
+            <h2>⚠️ المشاكل المكتشفة</h2>
+            <ul><li>Meta Description فارغ - يؤثر على ظهور الموقع في البحث</li><li>Meta Keywords فارغ - لا يؤثر مباشرة لكن مفيد</li><li>Open Graph Description فارغ - يؤثر على السوشيال ميديا</li><li>H1 Tag مفقود - مهم لـ SEO</li><li>Google Analytics غير مثبت</li></ul>
+        </div>
+        
+        <div class="card">
+            <h2>✅ التوصيات</h2>
+            <ul><li>إضافة Meta Description فريد لكل صفحة (150-160 حرف)</li><li>إضافة Meta Keywords relevant للصفحة</li><li>إضافة H1 Tag يحتوي كلمة المفتاحية الرئيسية</li><li>تركيب Google Analytics</li><li>إضافة Open Graph Description</li></ul>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2026 - Socialbalaant</p>
+    </div>
+</body>
+</html>
