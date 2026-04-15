@@ -22,64 +22,17 @@
         .badge-danger { background: var(--danger); }
         ul { padding-right: 25px; margin: 10px 0; }
         li { margin-bottom: 8px; }
-        .swot-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-        .swot-card { background: var(--white); padding: 20px; border-radius: 10px; border-right: 5px solid; }
-        .swot-card.strengths { border-color: var(--success); }
-        .swot-card.weaknesses { border-color: var(--danger); }
-        .swot-card.opportunities { border-color: var(--accent); }
-        .swot-card.threats { border-color: var(--warning); }
-        .swot-card h3 { margin-bottom: 15px; }
-        .swot-card.strengths h3 { color: var(--success); }
-        .swot-card.weaknesses h3 { color: var(--danger); }
-        .swot-card.opportunities h3 { color: var(--accent); }
-        .swot-card.threats h3 { color: var(--warning); }
         .nav-tabs { background: var(--primary); padding: 10px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-bottom: 20px; }
         .nav-tabs a { color: white; text-decoration: none; padding: 8px 15px; border-radius: 5px; font-size: 0.9em; }
         .nav-tabs a:hover, .nav-tabs a.active { background: rgba(255,255,255,0.2); }
         .back-link { display: inline-block; background: var(--primary); color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; margin-bottom: 20px; }
         .footer { background: var(--primary); color: white; text-align: center; padding: 20px; margin-top: 40px; }
-    
-        /* Mobile Responsive */
-        @media (max-width: 768px) {
-            .header { padding: 20px 15px !important; }
-            .header h1 { font-size: 1.3em !important; }
-            .header p { font-size: 0.9em !important; }
-            .nationwide-banner { padding: 15px 10px !important; font-size: 0.95em !important; margin: -20px -15px 20px !important; }
-            .container { padding: 15px 10px !important; }
-            .task-grid { grid-template-columns: 1fr !important; gap: 15px !important; }
-            .task-card { padding: 15px !important; }
-            .task-header { flex-direction: column !important; align-items: flex-start !important; gap: 10px !important; }
-            .task-number { width: 35px !important; height: 35px !important; font-size: 0.9em !important; }
-            .task-status { font-size: 0.75em !important; }
-            .task-title { font-size: 1em !important; }
-            .task-desc { font-size: 0.85em !important; }
-            .stats { grid-template-columns: repeat(3, 1fr) !important; gap: 10px !important; }
-            .stat-card { padding: 15px !important; }
-            .stat-card h3 { font-size: 1.5em !important; }
-            .stat-card p { font-size: 0.8em !important; }
-            .progress-section { padding: 15px !important; }
-            .nav-tabs { padding: 8px !important; gap: 5px !important; }
-            .nav-tabs a { padding: 6px 10px !important; font-size: 0.8em !important; }
-            .back-link { padding: 8px 15px !important; font-size: 0.9em !important; }
-            table { font-size: 0.85em !important; overflow-x: auto !important; display: block !important; }
-            th, td { padding: 8px 5px !important; }
-            .card { padding: 15px !important; }
-            h2 { font-size: 1.1em !important; }
-            .regions-list { gap: 5px !important; }
-            .region-tag { font-size: 0.8em !important; padding: 4px 10px !important; }
-            .swot-grid { grid-template-columns: 1fr !important; }
-            .scores-grid { grid-template-columns: 1fr 1fr !important; }
-            .scores-grid .score-card h3 { font-size: 2.5em !important; }
-            .footer { padding: 15px !important; font-size: 0.85em !important; }
+        .table-wrapper { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+        @media (max-width: 768px) { 
+            .container { padding: 15px 10px; } 
+            .nav-tabs a { font-size: 0.75em; padding: 6px 10px; }
+            th, td { padding: 10px 8px; font-size: 0.85em; }
         }
-        @media (max-width: 480px) {
-            .header h1 { font-size: 1.1em !important; }
-            .stats { grid-template-columns: 1fr 1fr !important; }
-            .stat-card h3 { font-size: 1.3em !important; }
-            .task-grid { gap: 10px !important; }
-            .nav-tabs a { font-size: 0.7em !important; padding: 5px 8px !important; }
-        }
-
     </style>
 </head>
 <body>
@@ -97,7 +50,7 @@
             <a href="CONTENT.html">📖 المحتوى</a>
             <a href="GSC.html">📊 GSC</a>
             <a href="TAG-MANAGER.html">🏷️ Tag</a>
-            <a href="GOOGLE-ANALYTICS.html">📈 Google Analytics</a>
+            <a href="GOOGLE-ANALYTICS.html">📈 Analytics</a>
             <a href="BACKLINKS.html">🔗 Backlinks</a>
             <a href="TASKS.html">✅ المهام</a>
         </div>
@@ -105,46 +58,43 @@
         <a href="SEO-DASHBOARD.html" class="back-link">← العودة للوحة التحكم</a>
         
         <div class="card">
-            <h2>🚨 المنافسين الرئيسيين</h2>
-            <div class="table-wrapper"><table>
-                <tr><th>الموقع</th><th>مستوى التهديد</th><th>النوع</th><th>نقاط القوة</th></tr>
-                <tr>
-            <td><a href="https://islamweb.net" target="_blank">islamweb.net</a></td>
+            <h2>🚨 المنافسين الرئيسيين - جميعهم يعملون</h2>
+            <div class="table-wrapper">
+                <table>
+                    <tr><th>الموقع</th><th>مستوى التهديد</th><th>النوع</th><th>نقاط القوة</th></tr>
+                    <tr>
+            <td><a href="https://islamweb.net" target="_blank" rel="noopener">إسلام ويب</a></td>
+            <td><span class="badge badge-danger">85%</span></td>
+            <td>تهديد عالي</td>
+            <td>أكبر موقع إسلامي, محتوى ضخم</td>
+        </tr><tr>
+            <td><a href="https://binbaz.org.sa" target="_blank" rel="noopener">ابن باز</a></td>
             <td><span class="badge badge-danger">70%</span></td>
             <td>تهديد عالي</td>
-            <td>أكبر, المحتوى</td>
+            <td>سمعة, الكلمات</td>
         </tr><tr>
-            <td><a href="https://binbaz.org.sa" target="_blank">binbaz.org.sa</a></td>
-            <td><span class="badge badge-warning">55%</span></td>
-            <td>تهديد متوسط</td>
-            <td>السمعة, الكلمات</td>
+            <td><a href="https://ehsan.org.sa" target="_blank" rel="noopener">إحسان</a></td>
+            <td><span class="badge badge-danger">75%</span></td>
+            <td>تهديد عالي</td>
+            <td>كبير</td>
         </tr><tr>
-            <td><a href="Various" target="_blank">المساجد المحلية</a></td>
+            <td><a href="https://local mosques" target="_blank" rel="noopener">المساجد</a></td>
             <td><span class="badge badge-warning">30%</span></td>
             <td>تهديد منخفض</td>
             <td>محلي</td>
         </tr>
-            </table></div>
+                </table>
+            </div>
         </div>
         
-        <h2 style="color: var(--primary); margin: 30px 0 20px;">📊 تحليل SWOT</h2>
-        <div class="swot-grid">
-            <div class="swot-card strengths">
-                <h3>💪 نقاط القوة</h3>
-                <ul><li>تخصصة في الدعوة</li><li>الكلمة الذهبية بحرة</li></ul>
-            </div>
-            <div class="swot-card weaknesses">
-                <h3>⚠️ نقاط الضعف</h3>
-                <ul><li>SEO ضعيف</li><li>لا Schema</li><li>/Donate = 404</li></ul>
-            </div>
-            <div class="swot-card opportunities">
-                <h3>🚀 الفرص</h3>
-                <ul><li>الدعوة بحرة</li><li>توعية الجاليات</li></ul>
-            </div>
-            <div class="swot-card threats">
-                <h3>⚡ التهديدات</h3>
-                <ul><li>islamweb.net</li><li>binbaz.org.sa</li></ul>
-            </div>
+        <div class="card">
+            <h2>💡 توصيات المنافسة</h2>
+            <ul>
+                <li>التركيز على الكلمات المحلية (منطقة الجمعيات)</li>
+                <li>بناء محتوى فريد يميز كل جمعية</li>
+                <li>الاستفادة من قرب الجمعية من المستفيدين</li>
+                <li>الشراكة مع المنصات الكبيرة مثل إحسان</li>
+            </ul>
         </div>
     </div>
     <div class="footer">
